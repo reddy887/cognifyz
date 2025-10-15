@@ -1,7 +1,7 @@
 // Select the button
 const button = document.getElementById("colorButton");
 
-// Function to generate a random color
+// Function  generate a random color
 function getRandomColor() {
   const letters = "0123456789ABCDEF";
   let color = "#";
@@ -11,7 +11,7 @@ function getRandomColor() {
   return color;
 }
 
-// Add click event to change background color
+// change background color
 button.addEventListener("click", function () {
   document.body.style.backgroundColor = getRandomColor();
 });
