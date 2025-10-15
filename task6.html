@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Styling and Validation</title>
+    <link rel="stylesheet" type="text/css" href="task6.css" />
+  </head>
+  <body>
+    <header>
+      <h1>cognifyz - Form Example</h1>
+    </header>
+
+    <main>
+      <section class="form-section">
+        <h2>Contact Form</h2>
+        <form id="contactForm">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+
+          <label for="age">Age:</label>
+          <input
+            type="number"
+            id="age"
+            name="age"
+            placeholder="Enter your age"
+            required
+          />
+
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Enter your message"
+            rows="4"
+            required
+          ></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+
+        <!-- Container for validation messages -->
+        <div id="formFeedback"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; cognifyz</p>
+    </footer>
+
+    <script src="task6.js"></script>
+  </body>
+</html>
