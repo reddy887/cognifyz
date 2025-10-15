@@ -1,0 +1,101 @@
+/* Basic styles for all devices */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header,
+footer {
+  background-color: #d8ea84;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  display: block;
+}
+
+main {
+  display: flex;
+  margin: 20px;
+  gap: 20px;
+}
+
+.content {
+  flex: 3;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.sidebar {
+  flex: 1;
+  background-color: #ddd;
+  padding: 20px;
+}
+
+/* Footer styling */
+footer {
+  margin-top: 20px;
+}
+
+/* Media query for devices with max width 768px (tablets) */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  header,
+  footer {
+    padding: 15px;
+  }
+}
+
+/* Media query for devices with max width 480px (phones) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  nav ul li a {
+    padding: 10px 15px;
+  }
+}
